@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>PEXELS API PR</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <span>Başlamak için bir şeyler yazın! (Örneğin: "car", "cat", "istanbul")</span>
+        <input type="text" id="input">
+        <button id="search-button">ARA</button>
+        <a href="liked.html" target="_blank">Like</a>
+    </div>
+    <div class="main-area">
+
+
+        <!-- <div class="image-area">
+            <div class="image-area-for-hover">
+                <img src="images/pexels-eberhard-grossgasteiger-4406191.jpg" alt="pexels-api-image" id="image-set">
+                <div class="image-info-area">
+                    <span id="image-info-text-title">Red Vehicle on the Road asdasdfwsfgds sgfdıojsdfg dsfsdsadda</span>
+                    <span>
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <span id="image-info-person">
+                        <a href="#">Copyright: bilgicgurkan</a>
+                    </span>
+                    <span id="id"></span>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    
+
+    <div class="pageBtn">
+        <!-- <button id="prev">Önceki</button>
+        <button id="next">Sonraki</button> -->
+    </div>
+
+    <div class="number-area">
+        <!-- <label for="page-number" id="goText">Gitmek için bir sayfa numarası seç</label>
+        <input type="number" name="page-number" id="page-number" min="1">
+        <button id="go">Git!</button> -->
+    </div>
+
+
+
+    <!-- <script>
+
+
+        let count = 1;
+        document.querySelector("#next").addEventListener("click", pageNext)
+        document.querySelector("#prev").addEventListener("click", pagePrev)
+
+        if (pagePrev) {
+            count++;
+            console.log(count)
+        }
+
+    </script> -->
+
+    <script src="image.js"></script>
+    <script src="pexels-api.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

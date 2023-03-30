@@ -1,0 +1,9 @@
+.fa-trash-can{
+    font-size: large;
+    padding: 2px;
+    /* transition: 2s; */
+}
+
+.fa-trash-can:hover{
+    color: rgb(182, 0, 0);
+}
