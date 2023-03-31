@@ -45,4 +45,13 @@ class UI {
     static pageNumber() {
         document.querySelector("#page-number").value = "";
     }
+    static likePage() {
+        document.querySelector(".like-page").addEventListener("mouseover", function () {
+            document.querySelector(".like-page").setAttribute("style", "left:-20px")
+        })
+
+        document.querySelector(".like-page").addEventListener("mouseleave", function () {
+            document.querySelector(".like-page").setAttribute("style", "left:-80")
+        })
+    }
 }

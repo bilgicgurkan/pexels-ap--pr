@@ -21,9 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 eventListeners();
                 console.log(result)
                 Storage.findIDandAddStorage();
+                UI.likePage();
             })
             .catch(err => console.log(err))
     })
+    UI.likePage();
+
 })
 
 function eventListeners() {
