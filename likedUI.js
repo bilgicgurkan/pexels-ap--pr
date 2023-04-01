@@ -30,4 +30,10 @@ class LikedUI {
             })
         })
     }
+    static deleteAllUI() {
+        let mainArea = document.querySelector(".main-area");
+        while (mainArea.firstElementChild !== null) {
+            mainArea.firstElementChild.remove(mainArea.firstElementChild)
+        }
+    }
 }

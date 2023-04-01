@@ -1,12 +1,8 @@
 const btn = document.querySelector("#search-button");
 const text = document.querySelector("#input");
-
 const pexel = new Pexels(text);
-let count = 1;
+let count = 1;  
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     Storage.showBtnStorage();
-// })
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,6 +42,7 @@ function showNextPage() {
 
     if (pageNumber.value == "") {
         count++
+
         pageNumber.value = count;
         let search = text.value;
         pexel.getNextPage(count, search)
@@ -56,7 +53,6 @@ function showNextPage() {
                 else {
                     UI.getImage(result);
                     Image.textHover();
-                    console.log(result)
                     Storage.findIDandAddStorage();
                 }
             })
@@ -66,6 +62,7 @@ function showNextPage() {
         let count = pageNumber.value;
         count++
         pageNumber.value = count;
+
         let search = text.value;
         pexel.getNextPage(count, search)
             .then(result => {
@@ -75,7 +72,6 @@ function showNextPage() {
                 else {
                     UI.getImage(result);
                     Image.textHover();
-                    console.log(result)
                     Storage.findIDandAddStorage();
                 }
             })
@@ -101,7 +97,6 @@ function showPrevPage() {
                 else {
                     UI.getImage(result);
                     Image.textHover();
-                    console.log(result)
                     Storage.findIDandAddStorage();
                 }
             })
@@ -116,80 +111,12 @@ function showCurrentPage() {
         .then(result => {
             if (result.photos.length == 0) {
                 alert("Sergilenecek Görsel Bulunamadı!")
-                console.log(result.photos)
             }
             else {
                 UI.getImage(result);
                 Image.textHover();
-                console.log(result)
                 Storage.findIDandAddStorage();
             }
         })
         .catch(err => console.log(err))
 }
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     pexel.getCurrentImage()
-//         .then(result => {
-//             document.querySelector(".image-area").innerHTML =
-//                 `
-//                     <img src="${result.src.portrait}" alt="">
-            
-//         `
-//             console.log(result)
-//         })
-//         .catch(err => console.log(err))
-// })
-
-
-
-
-// let count = 1;
-// nextBtn.addEventListener("click", function () {
-//     let search = text.value;
-//     if (pageNumber.value !== null) {
-//         let count = pageNumber.value;
-//         count++
-//     }
-//     else {
-//         count++
-//     }
-//     console.log(count)
-//     console.log(search)
-
-//     pexel.getNextPage(count, search)
-//         .then(result => {
-//             UI.getImage(result);
-//             Image.textHover();
-//             console.log(result)
-//         })
-//         .catch(err => console.log(err))
-
-//     // pexel.getNextPage(count, search)
-//     //     .then(result => {
-//     //         UI.getImage(result);
-//     //         Image.textHover();
-//     //         console.log(result)
-//     //     })
-//     //     .catch(err => console.log(err))
-// })
-
-// goBtn.addEventListener("click", function () {
-//     let search = text.value;
-
-//     pexel.getNextPage(pageNumber.value, search)
-//         .then(result => {
-//             UI.getImage(result);
-//             Image.textHover();
-//             console.log(result)
-//         })
-//         .catch(err => console.log(err))
-// })
-
-
-
-
-

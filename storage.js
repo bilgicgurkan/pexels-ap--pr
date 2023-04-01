@@ -11,16 +11,12 @@ class Storage {
         return list;
     }
     static findIDandAddStorage() {
-        // current.forEach(function (element) {
-        //     console.log(element.id)
-        // })
         let likeButton = document.querySelectorAll("#hearts");
         let list = this.getStorageList();
 
         likeButton.forEach(function (heart) {
             heart.addEventListener("click", function (e) {
                 let id = e.target.parentElement.nextElementSibling.nextElementSibling.textContent;
-                console.log(id)
 
                 if (list.indexOf(id) === -1) {
                     list.push(id);
@@ -40,7 +36,6 @@ class Storage {
         likeButton.forEach(function (heart) {
             heart.addEventListener("click", function (e) {
                 let id = e.target.parentElement.nextElementSibling.nextElementSibling.textContent;
-                // console.log(id)
                 let findId = list.findIndex(function (a) {
                     return a === id;
                 })
@@ -49,16 +44,8 @@ class Storage {
             })
         })
     }
-
-
-    // static showBtnStorage() {
-    //     let list = this.getStorageList();
-    //     let id = this.findID();
-
-    //     document.querySelector("#likeBtn").addEventListener("click", function () {
-    //         list.push(id);
-    //         localStorage.setItem("liked", JSON.stringify(list))
-    //     })
-    // }
+    static deleteAllStorage() {
+        localStorage.removeItem("liked");
+    }
 
 }
