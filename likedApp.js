@@ -1,5 +1,4 @@
 let pexels = new Pexels();
-// let storage = new Storage();
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -11,9 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 Image.textHover()
                 Storage.deleteFromStorage();
                 LikedUI.deleteFromUI();
+
             })
             .catch(err => console.log(err))
     });
+})
+
+document.querySelector("#clearAll").addEventListener("click", function () {
+    if (confirm("?")) {
+        Storage.deleteAllStorage();
+        LikedUI.deleteAllUI();
+    }
 })
 
 

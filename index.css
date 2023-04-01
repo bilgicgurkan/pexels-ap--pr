@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 body {
-    /* background-image: linear-gradient(to right, #696969, #797979, #8a8a8a, #9b9b9b, #acacac, #b9b9b9, #c5c5c5, #d2d2d2, #dddddd, #e8e8e8, #f4f4f4, #ffffff); */
-
     background-image: linear-gradient(to right, #ffffff, #efefef, #dfdfdf, #cfcfcf, #bfbfbf, #bfbfbf, #bfbfbf, #bfbfbf, #cfcfcf, #dfdfdf, #efefef, #ffffff);
-
 }
 
 .like-page {
@@ -15,7 +12,7 @@ body {
     display: inline;
     padding: 1rem;
     position: fixed;
-    left: -100px;
+    left: -115px;
     top: 40px;
     transition: 1s ease-in;
     cursor: pointer;
@@ -72,21 +69,6 @@ body {
     object-fit: cover;
 }
 
-/* #image-info-text-title {
-    z-index: 1;
-    position: absolute;
-    display: none;
-    transition: 1s ease-out;
-    height: 100%;
-    width: 100%;
-}
-
-#image-info-text-title:hover {
-    transform: translate(10px, 10px);
-    border: 1px solid #000;
-    width: 90%;
-} */
-
 .image-info-area {
     position: absolute;
     display: flex;
@@ -140,7 +122,6 @@ body {
 
 .image-info-area:hover {
     backdrop-filter: grayscale(1);
-    /* backdrop-filter: blur(2px); */
     border: none;
 }
 
@@ -150,7 +131,6 @@ body {
     top: 10px;
     font-size: 30px;
     display: none;
-    /* color: red; */
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.493);
