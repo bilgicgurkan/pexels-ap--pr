@@ -22,7 +22,7 @@
 
 > <sub> Kaldırılan resimler hem UI tarafında hem de local storage üzerinden silinir. </sub>
 
-### Localimde ayağa kaldırdığım projenin videosunu YouTube videosu üzerinden izleyebilirsiniz.
+### Localimde ayağa kaldırdığım projenin videosunu YouTube üzerinden izleyebilirsiniz.
 
 > <sub> https://www.youtube.com/watch?v=d3jh4R2tAYk </sub>
 
